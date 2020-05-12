@@ -1,5 +1,14 @@
 .tshirt-frame {
+    display: block;
+}
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
 
+@media only screen and (max-width: 768px) {
+    .tshirt-frame {
+        display: none;
+    }
 }
 
 .tshirt-frame__wrap {
