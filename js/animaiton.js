@@ -134,3 +134,37 @@ basePattern.onclick = moveToColor = () => {
     gsap.to('.underColorPattern', {duration: .3, x: 115});
 }
 
+let w = screen.width;
+
+
+if (w <= 1199){
+
+    settings.onclick = openPanel = () => {
+        gsap.to('.move-line', {duration: .1, y: -310})
+        gsap.to(".s_panel", {  visibility: 'visible'});
+        gsap.to(".s_panel", {  duration: .5, autoAlpha: 1});
+        gsap.to('.s_panel_close_btn', { delay: .5, autoAlpha: 1 });
+        gsap.to('.settings', { duration: .5, ease: "power4.out", autoAlpha: 0 })
+        
+    }
+    priceBtn.onclick = openPanel;
+    
+    s_panel_close_btn.onclick = closePanel = () => {
+        gsap.to(".s_panel", { duration: .5, autoAlpha: 0});
+        gsap.to('.s_panel_close_btn', { autoAlpha: 0},"-=1");
+        gsap.to('.settings', { duration: .5, ease: "power4.out", autoAlpha: 1 });
+        gsap.to('.move-line', {duration: .1, y: 0})
+    }
+}
+
+
+if (w <= 767){
+
+    // gsap.to('.move-line', {duration: .1, y: -400})
+    // gsap.to(".s_panel", {  visibility: 'visible'});
+    // gsap.to(".s_panel", {  duration: .5, autoAlpha: 1});
+    // gsap.to('.s_panel_close_btn', { delay: .5, autoAlpha: 1 });
+    // gsap.to('.settings', { duration: .5, ease: "power4.out", autoAlpha: 0 })
+
+}
+

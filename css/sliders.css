@@ -9,16 +9,7 @@
     justify-content: center;
     align-items: center;
 }
-/* ------------------------------
-		TABLET (768px)
------------------------------- */
 
-@media only screen and (max-width: 768px) {
-    .move-line {
-        display: none;
-    }
-
-}
 
 .move-line__active {
     width: 33%;
@@ -43,9 +34,9 @@
 
 .s_panel__base_bg__slider .slick-arrow {
     top: 50%;
-    height: 26px;
-    width: 14px;
-    margin-top: -13px;
+    height: 22px;
+    width: 13px;
+    margin-top: -12px;
     position: absolute;
     font-size: 0;
     cursor: pointer;
@@ -53,4 +44,32 @@
     border: none;
     background-image: url('../images/svg/arrow-black.svg');
     background-repeat: no-repeat;
+}
+
+.slider-small {
+    display: none;
+}
+
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
+
+@media only screen and (max-width: 768px) {
+    .move-line {
+        /* display: none; */
+    }
+    .slider-small {
+        position: relative;
+        top: -300px;
+    }
+
+
+}
+
+/* ------------------------------
+		DESKTOP (1200px)
+------------------------------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
 }

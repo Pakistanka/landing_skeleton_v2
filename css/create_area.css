@@ -102,3 +102,24 @@
     top: 65%;
     width: 50px;
 }
+
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
+
+@media only screen and (max-width: 768px) {
+    .leaf,
+    .light,
+    .coffin,
+    .bone,
+    .scissors,
+    .herb,
+    .tongue,
+    .flower,
+    .tooth,
+    .eye,
+    .knife,
+    .mushroom {
+        display: none;
+    }
+}

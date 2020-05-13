@@ -1,15 +1,6 @@
 .tshirt-frame {
     display: block;
 }
-/* ------------------------------
-		TABLET (768px)
------------------------------- */
-
-@media only screen and (max-width: 768px) {
-    .tshirt-frame {
-        display: none;
-    }
-}
 
 .tshirt-frame__wrap {
     position: relative;
@@ -25,7 +16,7 @@
 .tshirt-frame__description {
     position: fixed;
     top: 42%;
-    left: 45%;
+    left: calc(100vw / 2.4);
 
     color: #ffffff;
     font-family: "Amateur Printer JNL", sans-serif;
@@ -46,4 +37,66 @@
     top: 47%;
     position: fixed;
     left: 55%;
+}
+
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
+
+@media only screen and (max-width: 768px) {
+    .tshirt-frame__mainPicture {
+        position: fixed;
+        top: 24%;
+        left: calc(100% / 3);
+        width: 121px;
+        height: 85px;
+    }
+    .tshirt-frame__description {
+        position: fixed;
+        top: 36%;
+        left: calc(100vw / 2.6);
+        color: #ffffff;
+        font-family: "Amateur Printer JNL", sans-serif;
+        font-size: 14px;
+        text-align: center;
+    }
+    .tshirt-frame__leave {
+        width: 44px;
+        height: 33px;
+        top: 39%;
+        position: fixed;
+        left: calc(100% / 2.9);
+    }
+    .tshirt-frame__light {
+        width: 34px;
+        height: 32px;
+        top: 39%;
+        position: fixed;
+        left: 55%;
+    }
+
+}
+
+/* ------------------------------
+		DESKTOP (1200px)
+------------------------------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .tshirt-frame__leave {
+        width: 29px;
+        height: 54px;
+        top: 75%;
+        position: absolute;
+        left: -10%;
+    }
+    .tshirt-frame__light {
+        width: 29px;
+        height: 54px;
+        top: 79%;
+        position: absolute;
+        left: 73%;
+    }
+    .tshirt-frame__description {
+        left: calc(100vw / 2.3);
+    }
 }

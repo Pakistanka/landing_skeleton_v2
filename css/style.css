@@ -28,12 +28,4 @@ button:focus {
 
 
 
-/* ------------------------------
-		TABLET (768px)
------------------------------- */
 
-@media only screen and (max-width: 768px) {
-    .skeleton_img {
-        display: none;
-    }
-}

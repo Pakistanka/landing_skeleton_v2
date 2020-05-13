@@ -6,8 +6,8 @@
 	 font-size: 18px;
      color: #222;
      background-color: #fff;
-     border: 2px solid black;
-     border-radius: 10px;;
+	 border: 1px solid #D0D0D0;
+     border-radius: 5px;
 }
 
  .select-box__current {
@@ -48,8 +48,7 @@
 	display: none;
 	width: 100%;
 	margin: 0;
-	padding: 2px 15px;
-
+	padding: 7px 15px;
 	color: #272727;
 	font-family: "Basis Grotesque Pro", sans-serif;
 	font-size: 11px;
