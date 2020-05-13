@@ -12,7 +12,7 @@ body {
 
 body {
     min-width: 320px;
-    overflow: hidden;
+    overflow-X: hidden;
 
     display: flex;
     flex-direction: column;

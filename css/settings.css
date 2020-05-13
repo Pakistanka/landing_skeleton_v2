@@ -30,3 +30,13 @@
     display: block;
     margin: 1rem 0.5rem 0rem;
 }
+
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
+
+@media only screen and (max-width: 768px) {
+    .settings {
+        display: none;
+    }
+} 
