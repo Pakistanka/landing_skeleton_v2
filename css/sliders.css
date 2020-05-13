@@ -61,6 +61,43 @@
     .slider-small {
         position: relative;
         top: -300px;
+        background-color: #a300ff;
+        padding: 10px 0px;
+        margin-left: 5px;
+    }
+    .slider-small .slider__image {
+        width: 30px;
+        height: 40px;
+    }
+    .slider-small .slick-prev,
+    .slider-small .slick-prev{
+        left: -1rem;
+        transform: rotate(180deg);
+    }
+    .slider-small .slick-next,
+    .slider-small .slick-next {
+        right: .5rem;
+        transform: rotate(-90deg);
+    }
+
+        
+    .slider-small .slick-arrow,
+    .slider-small .slick-arrow {
+    top: 50%;
+    height: 22px;
+    width: 13px;
+    margin-top: -12px;
+    position: absolute;
+    font-size: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-image: url(../images/svg/arrow.svg);
+    background-repeat: no-repeat;
+    }
+    .slider-small .slick-prev {
+        left: -12px;
+        transform: rotate(90deg);
     }
 
 
