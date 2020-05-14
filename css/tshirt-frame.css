@@ -1,21 +1,28 @@
 .tshirt-frame {
     display: block;
 }
+/* ------------------------------
+		TABLET (768px)
+------------------------------ */
+
+@media only screen and (max-width: 768px) {
+    .tshirt-frame {
+        display: none;
+    }
+}
 
 .tshirt-frame__wrap {
     position: relative;
 }
-
 .tshirt-frame__mainPicture {
     position: fixed;
     top: 25%;
     left: 46%;
-
 }
-
 .tshirt-frame__description {
     position: fixed;
     top: 42%;
+    left: 45%;
     left: calc(100vw / 2.4);
 
     color: #ffffff;
@@ -23,7 +30,6 @@
     font-size: 23px;
     text-align: center;
 }
-
 .tshirt-frame__leave {
     width: 29px;
     height: 54px;
@@ -99,4 +105,4 @@
     .tshirt-frame__description {
         left: calc(100vw / 2.3);
     }
-}
+} 
