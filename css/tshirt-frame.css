@@ -1,23 +1,38 @@
 .tshirt-frame {
     display: block;
+    height: 492px;
+    position: relative;
+    bottom: calc(100vh + 60px);
+    overflow: hidden;
 }
 
 .tshirt-frame__wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.tshirt-frame__images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.tshirt-frame__mainPicture {
+/* .tshirt-frame__mainPicture {
     position: fixed;
     top: 25%;
     left: 46%;
 
-}
+} */
 
 .tshirt-frame__description {
-    position: fixed;
+    /* position: fixed;
     top: 42%;
-    left: calc(100vw / 2.4);
-
+    left: calc(100vw / 2.4); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #ffffff;
     font-family: "Amateur Printer JNL", sans-serif;
     font-size: 23px;
@@ -27,16 +42,10 @@
 .tshirt-frame__leave {
     width: 29px;
     height: 54px;
-    top: 47%;
-    position: fixed;
-    left: 44%;
 }
 .tshirt-frame__light {
     width: 29px;
     height: 54px;
-    top: 47%;
-    position: fixed;
-    left: 55%;
 }
 
 /* ------------------------------
@@ -44,36 +53,38 @@
 ------------------------------ */
 
 @media only screen and (max-width: 768px) {
-    .tshirt-frame__mainPicture {
+    /* .tshirt-frame__mainPicture {
         position: fixed;
         top: 24%;
         left: calc(100% / 3);
         width: 121px;
         height: 85px;
-    }
+    } */
     .tshirt-frame__description {
-        position: fixed;
-        top: 36%;
-        left: calc(100vw / 2.6);
         color: #ffffff;
         font-family: "Amateur Printer JNL", sans-serif;
         font-size: 14px;
         text-align: center;
-    }
+    } 
     .tshirt-frame__leave {
         width: 44px;
         height: 33px;
-        top: 39%;
-        position: fixed;
-        left: calc(100% / 2.9);
     }
     .tshirt-frame__light {
         width: 34px;
         height: 32px;
-        top: 39%;
-        position: fixed;
-        left: 55%;
     }
+    .tshirt-frame {
+        bottom: 50vh;
+    }
+    .tshirt-frame__wrap {
+        position: absolute;
+        height: 180px;
+        width: 150px;
+        top: 35%;
+        left: 25%;
+    }
+
 
 }
 

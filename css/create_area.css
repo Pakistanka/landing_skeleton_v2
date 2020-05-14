@@ -122,4 +122,7 @@
     .mushroom {
         display: none;
     }
+    .create_area {
+        height: 50vh;
+    }
 }

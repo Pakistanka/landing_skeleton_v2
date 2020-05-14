@@ -60,10 +60,12 @@
     }
     .slider-small {
         position: relative;
-        top: -300px;
-        background-color: #a300ff;
-        padding: 10px 0px;
-        margin-left: 5px;
+    /* top: -300px; */
+    background-color: #a300ff;
+    padding: 10px 0px;
+    margin-left: 5px;
+    /* bottom: 100vh; */
+    top: 432px;
     }
     .slider-small .slider__image {
         width: 30px;
